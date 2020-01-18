@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/FirstPractice.iml" filepath="$PROJECT_DIR$/.idea/FirstPractice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dubbo-admin/dubbo-admin.iml" filepath="$PROJECT_DIR$/dubbo-admin/dubbo-admin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/practice-common/practice-common.iml" filepath="$PROJECT_DIR$/practice-common/practice-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/practice-controller/practice-controller.iml" filepath="$PROJECT_DIR$/practice-controller/practice-controller.iml" />
+      <module fileurl="file://$PROJECT_DIR$/practice-dao/practice-dao.iml" filepath="$PROJECT_DIR$/practice-dao/practice-dao.iml" />
+      <module fileurl="file://$PROJECT_DIR$/practice-employee-service/practice-employee-service.iml" filepath="$PROJECT_DIR$/practice-employee-service/practice-employee-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/practice-holiday-service/practice-holiday-service.iml" filepath="$PROJECT_DIR$/practice-holiday-service/practice-holiday-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/practice-interface-api/practice-interface-api.iml" filepath="$PROJECT_DIR$/practice-interface-api/practice-interface-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/practice-resource-service/practice-resource-service.iml" filepath="$PROJECT_DIR$/practice-resource-service/practice-resource-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/practice-user-service/practice-resource-service (1).iml" filepath="$PROJECT_DIR$/practice-user-service/practice-resource-service (1).iml" />
+      <module fileurl="file://$PROJECT_DIR$/practice-role-service/practice-role-service.iml" filepath="$PROJECT_DIR$/practice-role-service/practice-role-service.iml" />
+    </modules>
+  </component>
+</project>

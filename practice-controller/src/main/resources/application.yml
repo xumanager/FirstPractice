@@ -1,0 +1,22 @@
+spring:
+  freemarker:
+    cache: false
+    charset: UTF-8
+    check-template-location: true
+    content-type: text/html
+    expose-request-attributes: true
+    expose-session-attributes: true
+    request-context-attribute: request
+    suffix: .ftl
+    template-loader-path: classpath:/templates
+  mvc:
+    static-path-pattern: /static/**
+
+dubbo:
+  application:
+    name: boot-user-service
+  registry:
+    address: zookeeper://127.0.0.1:2181
+  protocol:
+    name: dubbo
+    port: 20881
