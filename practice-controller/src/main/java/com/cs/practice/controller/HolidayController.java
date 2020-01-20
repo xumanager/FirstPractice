@@ -14,7 +14,7 @@ public class HolidayController {
     @RequestMapping("/hello")
     public String toManager(){
 
-        return holidayService.sayHello();
+        return holidayService.findAllHoliday().toString();
     }
 
 
