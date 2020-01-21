@@ -20,8 +20,6 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="dubbo-admin" target="1.8" />
-      <module name="dubbo-admin (1)" target="1.8" />
-      <module name="dubbo-admin (2)" target="1.8" />
       <module name="practice-common" target="1.8" />
       <module name="practice-controller" target="1.8" />
       <module name="practice-dao" target="1.8" />
@@ -34,10 +32,9 @@
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_STRING" value="-encoding utf-8" />
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="dubbo-admin" options="-parameters" />
-      <module name="dubbo-admin (1)" options="-parameters" />
-      <module name="dubbo-admin (2)" options="-parameters" />
       <module name="practice-common" options="-parameters" />
       <module name="practice-controller" options="-parameters" />
       <module name="practice-dao" options="-parameters" />

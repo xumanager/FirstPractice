@@ -1,6 +1,7 @@
 package com.cs.practice.bean;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.Data;
 import org.springframework.format.annotation.DateTimeFormat;
 
@@ -18,6 +19,7 @@ import java.util.Date;
 @Data
 @Entity
 @Table(name = "holiday")
+@JsonIgnoreProperties(value={"hibernateLazyInitializer","handler","fieldHandler"})
 public class Holiday implements Serializable {
     @Id
     @Column(name = "id")
@@ -46,7 +48,7 @@ public class Holiday implements Serializable {
     private String state;  //0未提交 1审批中 2审批完成  3已停用
 
     @Basic
-    @Column(name = "userId")
-    private Integer userId;
+    @Column(name = "userid")
+    private Integer userid;
 
 }

@@ -172,7 +172,7 @@
 								<el-input v-model="holiday.title" autocomplete="off" style="width: 100%"></el-input>
 							</el-form-item>
 							<el-form-item label="请假天数" class="myformitem">
-								<el-input v-model="holiday.day" autocomplete="off" style="width: 100%"></el-input>
+								<el-input v-model="holiday.days" autocomplete="off" style="width: 100%"></el-input>
 							</el-form-item>
 							<el-form-item label="开始时间" class="myformitem">
 								<el-input v-model="holiday.date" autocomplete="off" style="width: 100%"></el-input>
@@ -182,8 +182,7 @@
 							</el-form-item>
 						</el-form>
 						<div slot="footer" style="display:flex;justify-content: center;align-items: center;padding:0;">
-							<el-button type="primary" >提交</el-button>
-							<el-button type="warning">重置</el-button>
+							<el-button type="primary" @click="submitHoliday">提交</el-button>
 						</div>
 					</el-dialog>
 		</div>
@@ -197,68 +196,28 @@
 						title:'',
 						content:'',
 						start:'',
-						day:'',
+						days:'',
 					},
 					title:'',
 					content:'',
 					start:'',
 					end:'',
-					holiday:[
-						{
-							id:'1',
-							title:'【孙琦】的请假单',
-							content:'回家',
-							day:'2',
-							date:'2020-01-05',
-							people:'孙琦',
-							status:'1'
-						},
-						{
-							id:'1',
-							title:'【孙琦】的请假单',
-							content:'回家',
-							day:'2',
-							date:'2020-01-05',
-							people:'孙琦',
-							status:'1'
-						},
-						{
-							id:'1',
-							title:'【孙琦】的请假单',
-							content:'回家',
-							day:'2',
-							date:'2020-01-02',
-							people:'孙琦',
-							status:'2'
-						},
-						{
-							id:'1',
-							title:'【孙琦】的请假单',
-							content:'回家',
-							day:'2',
-							date:'2020-01-03',
-							people:'孙琦',
-							status:'3'
-						},
-						{
-							id:'1',
-							title:'【孙琦】的请假单',
-							content:'回家',
-							day:'2',
-							date:'2020-01-03',
-							people:'孙琦',
-							status:'2'
-						},
-						{
-							id:'1',
-							title:'【孙琦】的请假单',
-							content:'回家',
-							day:'2',
-							date:'2020-01-08',
-							people:'孙琦',
-							status:'0'
-						},
-					]
+
+				},
+				methods:{
+					submitHoliday(){
+						axios({
+							method:'post',
+							url:'holiday/addHoliday',
+							params:{
+								holiday : this.holiday,
+								username:"张三",
+								processName:"holiday"
+							}
+						}).then((request)=>{
+							console.log(request.data);
+						})
+					}
 				}
 			})
 		</script>

@@ -6,3 +6,14 @@ dubbo:
   protocol:
     name: dubbo
     port: 20880
+
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/actiiviti?serverTimezone=UTC
+    username: root
+    password: root
+  activiti:
+    database-schema: ACT
+    database-schema-update: true

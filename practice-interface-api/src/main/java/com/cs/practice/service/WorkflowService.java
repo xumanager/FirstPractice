@@ -12,7 +12,12 @@ import java.util.List;
  * @create: 2020-01-20 08:43
  * @Version 1.0
  **/
-public interface HolidayService {
+public interface WorkflowService {
 
     public List<Holiday> findAllHoliday();
+
+    //启动流程
+    void startProcess(Holiday addBean, String username, String processName);
+
+    void addHolday(Holiday addBean);
 }
